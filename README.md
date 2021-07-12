@@ -1,5 +1,5 @@
 # Big_Data_Pymongod_Project0
-# MEAL_DELIVERY_COMAPNY
+# MEAL_DELIVERY_PROJECT_0
 #### BY MANASWINI AGRAWAL
 
 ### Service Function
