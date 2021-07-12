@@ -1,56 +1,63 @@
-# Big_Data_Pymongod_Project0
-# MEAL_DELIVERY_PROJECT_0
-#### BY MANASWINI AGRAWAL
+# PROBLEM DESCRIPTION 
+### Meal delivery system filter the data by using the in built operation.
 
-### Service Function
- 1. SEARCH MEAL_ID INFORMATION BU MEAL_ID 
- 2. DIFFERENT ORDERS AS PER _ID'S
- 3.FILETRING THE DATA AS PER THE MEAL_ID.
+# DATABASE
+###  Mongodb Compass
 
 
+# REQUIREMENT AND TECH STACK
+### Python,
+### data in json file 
+### MongoDB is implemented python libraries need for connecting are pymongo,json,pprint,json,warnings.
+
+
+# MEAL_DELIVERY_COMAPNY
+###  BY MANASWINI AGRAWAL
+
+## Service Function
+1. search MEAL_ID INFORMATION BU MEAL_ID 
+2. DIFFERENT ORDERS AS PER _ID'S
+3.FILETRING THE DATA AS PER THE MEAL_ID.
+
+# PYMONGO QUIRIES
 
 ## Sub-service
 #### USE MONGODB FOR NO SQL DATABASE AND USED PYMONGO FOR CONNECTING NOSQL WITH PYTHON
 
 
-###  IMPORTING THE PACKAGES BY USING PYMONGO AND CONNECTING IT WITH PYTHON
-### CONNECTING IT WITH CLIENT
+## RESTAPI design:
+#IMPORTING THE PACKAGES BY USING PYMONGO AND CONNECTING IT WITH PYTHON
+#CONNECTING IT WITH CLIENT
 
 
-### Creating a Database
-   */DATABASE CREATED /*
-   */ DATABASE=CLIENT["DATABASE_NAME"]*/
-### Creating Collection
-   */ Collection=DATABASE["COLLECTION_NAME"]
+#Creating a Database
+ */DATABASE CREATED8 */
 
- ### INSERTING THE MANY RECORDS
-   */COLLECTION.INSERT()_MANY /*
+ #INSERTING THE MANY RECORDS
+ '''/ COLLECTION.INSERT()_MANY /'''''
  
- ### Inserting_one_data
-   */  COLLECTION.INSERT()_MANY /*
+ ##inserting_one_data
+ */  COLLECTION.INSERT()_MANY */
  
- ### Finding the meal_id
- */FINDING THE MEAL_ID BY APROPRIATE ID /*
+ #finding the meal_id
+ /* FINDING THE MEAL_ID BY APROPRIATE ID */
  
- ### Deleting one record
-   */ DELETING ONE RECORD /*
-   */ COLLECTION.DELETE_ONE()/*
+ #deleting one record
+ /* DELETING ONE RECORD 
+    COLLECTION.DELETE_ONE()*/
 
-### Displaying limit of the database upto 3
-   */ DISPLAYING THE LIMITS UPTO DEFINED VALUE /*
-   */   COLLECTION.FIND().LIMIT(6)/*
+#displaying limit of the database upto 3
+/* DISPLAYING THE LIMITS UPTO DEFINED VALUE
+    cOLLECTION.FIND().LIMIT(6)*/
     
-### Sorting in ascending order  
-   */  SORTING THE DATA /* 
-   */ COLLECTION.FIND().SORT() /*
+##sorting in ascending order  
+/* SORTING THE DATA 
+COLLECTION.FIND().SORT() */
 
-### Update one
-   */UDATING THE QUERY IN THE DATABASES/*
-    
-### UPDATE MANY
-   */ UPDATE MANY UPADTE THE VALUES IN THA DATABASE /*
-   */ coll.update_many({},{"$set":{}}) /*
+#update_one
+/UDATING THE QUERY IN THE DATABASES/
+#UPDATE MANY
+/* UPDATE MANY UPADTE THE VALUES IN THA DATABASE */
 
-### DELETE MANY
-   */  DELETE THE RECORDS FROM THE DATABSE /*
-  */ COLLECTION.DELETE_MANY()/*
+#DELETE MANY/
+/* DELETE THE RECORDS FROM THE DATABSE
