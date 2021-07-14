@@ -1,65 +1,60 @@
 # PROBLEM DESCRIPTION 
-###  Meal delivery system filter the data by using the in built operation.
-
-# DATABASE
-###   Mongodb Compass
+###  Meal delivery system in this project mongodb used as the database 
 
 
 # REQUIREMENT AND TECH STACK
 ### 1.Python,
-### 2.data in json file 
-### 3.MongoDB is implemented python libraries need for connecting are pymongo,json,pprint,json,warnings.
+### 2.data in json file /documnet file
+### 3.Jupyter Notebook
+### 4. Mongodb
 
-
-# MEAL_DELIVERY_COMAPNY
-###   BY MANASWINI AGRAWAL
+# MEAL_DELIVERY_SYSTEM
+###   By Manaswini
 
 ## Service Function
-### 1. SEARCH MEAL_ID INFORMATION BU MEAL_ID 
-### 2. DIFFERENT ORDERS AS PER _ID'S
-### 3.FILETRING THE DATA AS PER THE MEAL_ID.
+### Install package PYMONGO
+### Creating the Database connection
+#### Creating the connection with collection meal_info.json file with source code.
+
 
 ## PYMONGO QUERIES
-### USE MONGODB FOR NO SQL DATABASE AND USED PYMONGO FOR CONNECTING NOSQL WITH PYTHON
-
-
-## RESTAPI design:
-### IMPORTING THE PACKAGES BY USING PYMONGO AND CONNECTING IT WITH PYTHON
-### CONNECTING IT WITH CLIENT
-
+### use mongodb for no sql database and used pymongo for connecting nosql with python
 
 ### Creating a Database
- */DATABASE CREATED /*
   #### database=client["database_name"] 
  
 
-### INSERTING THE MANY RECORDS
- */ COLLECTION.INSERT()_MANY /*
-   #### collection.insert_many()
+### Inserting many documents in collection
+   #### collection.insert_many(info_data)
  
  ### inserting_one_data
- */  COLLECTION.INSERT()_ONE /*
-   #### result=collection.insert_one(insrt) 
+   #### result=collection.insert_one(data1) 
  
  ### Finding the meal_id
- */ FINDING THE MEAL_ID BY APROPRIATE ID /*
    #### collection.find_one({'meal_id':1010}) 
+   
  ### Deleting one record
- */ DELETING ONE RECORD /* 
-   #### COLLECTION.DELETE_ONE() 
+   #### Collection.delete_one({"id":123}) 
 
-### Displaying limit of the database upto 3
-*/ DISPLAYING THE LIMITS UPTO DEFINED VALUE/*
+### Displaying limit of the database upto limit
    ####  COLLECTION.FIND().LIMIT(6) 
-    
-### sorting in ascending order  
-*/ SORTING THE DATA /*
-  #### COLLECTION.FIND().SORT() 
+ 
+ ### Inserted_ids to the documents
+#### res=collection.insert_many(info)
+#### Inserted_IDs=res.inserted_ids
+#### for i in Inserted_IDs:
+####    print(i)
+ 
+### Sorting the data in ascending order, descending order  
+  #### collection.find().sort() 
+  #### collection.find.sort("meal_id",-1)
 
-### update_one
-*/UPDATING THE QUERY IN THE DATABASES/*
-  #### COLLECTION.UPDATE_ONE({"ID":123},{"$SET":{"NAME":"MANAS"})
+### Update_one
+  #### collection.update_one({"_id":123},{"$set":{"name":"manas"})
   
-### UPDATE MANY
-*/ UPDATE MANY UPADTE THE VALUES IN THA DATABASE /*
-  #### COLLECTION.UPDATE_MANY({},{"$SET":{"NAME":"MANAS"})
+### Update many
+ #### collection.update_many({},{"$set":{"name":"manas"})
+
+### Delete many
+#### collection.delete_many({"id":1253588,"id":1747636,})
+#### collection.delete_many( {"cuisine": {"$regex": "^S"}})
