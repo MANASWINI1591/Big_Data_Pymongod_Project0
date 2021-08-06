@@ -4,7 +4,7 @@
 
 # REQUIREMENT AND TECH STACK
 ### 1.Python,
-### 2.data in json file /documnet file
+### 2.data in json file /documentt file
 ### 3.Jupyter Notebook
 ### 4. Mongodb
 
